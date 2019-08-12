@@ -1,0 +1,445 @@
+
+
+.cover-banner::before {
+  background: url(./assets/aaron1bw.jpg) no-repeat ;
+  background-size: cover;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+
+.cover-banner::after {
+  background-color: rgb(0, 0, 0);
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.5;
+  }
+
+
+@media all and (min-width: 425px) and (max-width: 425px) {
+  .cover-banner::before {
+    background: url(./assets/aaron1bw6.jpg) no-repeat;
+    background-size: cover;
+    transform: scale(1.2) translate(10px, 70px);
+    filter: blur(0.5px);
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+  }
+  .cover-banner::after {
+    background-color: rgb(0, 0, 0);
+    transform: scale(1.2) translate(10px, 70px);
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    }
+
+    .card-image-size {
+      width: 50px !important;
+      height: 50px !important;
+    }
+
+
+    .position {
+      width: 100px !important;
+  }
+
+  .info-btn {
+    width: 100px !important;
+}
+
+.subTitle {
+  font-size: 12px;
+  margin-left: 1.4em;
+  margin-top: -1em;
+  font-weight: lighter;
+  border-bottom: rgba(105, 106, 107, 0.109) 1px solid;
+  padding-bottom: .5em;
+}
+  
+}
+
+@media all and (min-width: 150px) and (max-width: 375px) {
+  .cover-banner::before {
+    background: url(./assets/aaron1bw6.jpg) no-repeat;
+    background-size: cover;
+    transform: scale(2) translate(10px, 70px);
+    filter: blur(0.5px);
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+  }
+  .cover-banner::after {
+    background-color: rgb(0, 0, 0);
+    transform: scale(2) translate(10px, 70px);
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    }
+
+    .card-image-size {
+      width: 50px !important;
+      height: 50px !important;
+    }
+
+
+    .position {
+      width: 100px !important;
+  }
+
+  .info-btn {
+    width: 100px !important;
+}
+  
+}
+
+
+
+@media all and (min-width: 768px) and (max-width: 768px) {
+  .cover-banner::before {
+    background: url(./assets/aaron1bw3.jpg) no-repeat;
+    background-size: cover;
+    transform: scale(1.2) translate(10px, 70px);
+    filter: blur(0.5px);
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+  }
+  .cover-banner::after {
+    background-color: rgb(0, 0, 0);
+    transform: scale(1.2) translate(10px, 70px);
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    }
+  
+}
+
+
+.background-text {
+  background-color: #0f0f0f9f;
+  border-radius: 5px;
+  padding: 1.4em;
+  line-height: 2;
+}
+ul {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.social_section_1info {
+  margin: 0 !important;
+}
+
+li {
+  display: inline;
+}
+
+.follow-me {
+  color: white;
+  margin: .3em .2em .3em .6em;
+}
+
+.my-profile-settings{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+div {
+  margin: auto;
+  padding: auto;
+}
+}
+
+.facebook {
+  border-radius: 450px;
+  padding: .5em 1em .5em .5em;
+  background: #ffffff;
+  text-align: center;
+  border-top: 1px solid #007af5;
+  border-bottom: 1px solid #007af5;
+  line-height: 40px;
+  color: #007af5;
+}
+
+.facebook:hover {
+  background-color: #007af5;
+  color: white;
+  border: none;
+}
+
+.gitHub {
+  border-radius: 450px;
+  padding: .5em .8em .5em .5em;
+  background: #ffffff;
+  border-top: 1px solid #0f0f0f;
+  border-bottom: 1px solid #0f0f0f;
+  text-align: center;
+  line-height: 40px;
+  color: #111111;
+}
+
+.gitHub:hover {
+  background-color: #0f0f0f;
+  color: white;
+  border: none;
+}
+
+.twitter {
+  border-radius: 450px;
+  padding: .5em .8em .5em .5em;
+  background: #ffffff;
+  border-top: 1px solid #1da1f2;
+  border-bottom: 1px solid #1da1f2;
+  text-align: center;
+  line-height: 40px;
+  color: #1da1f2;
+}
+
+
+.twitter:hover {
+  background-color: #1da1f2;
+  color: white;
+  border: none;
+}
+
+.linkedIn {
+  border-radius: 450px;
+  padding: .5em .8em .5em .5em;
+  background: #ffffff;
+  border-top: 1px solid #0077B5;
+  border-bottom: 1px solid #0077B5;
+  text-align: center;
+  line-height: 40px;
+  color: #0077B5;
+}
+
+.linkedIn:hover {
+  background-color: #0077B5;
+  color: white;
+  border: none;
+}
+
+.google {
+  border-radius: 450px;
+  padding: .5em .8em .5em .5em;
+  background: #ffffff;
+  border-top: 1px solid #038045;
+  border-bottom: 1px solid #038045;
+  text-align: center;
+  line-height: 40px;
+  color: #038045;
+}
+
+.google:hover {
+  background-color: #038045;
+  color: white;
+  border: none;
+}
+
+.my-btn {
+  margin-right: 1.5em;
+  margin-bottom: 2em;
+}
+
+.welcome-to-profile {
+  font-size: 17px;
+  color: #fff;
+  margin-bottom: 30px;
+  position: relative;
+  text-transform: capitalize;
+}
+
+
+//working with modals
+.modals {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding: 5em; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.63); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.63); /* Black w/ opacity */
+}
+
+.modal-content {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+
+.display-block {
+  display: block;
+  
+}
+
+.display-none {
+  display: none;
+}
+
+// Slide controller information
+.opacity-slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.opacity-slider:hover {
+  opacity: 1;
+}
+
+.image-container {
+  position: relative;
+  max-width: 300px;
+  margin-top: .5em;
+  margin-left: 1em;
+}
+
+
+.card-image-size {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 1.2em;
+  transition: transform 5s;
+}
+
+
+
+.card-image-size:hover {
+  transform: scale(.5)
+}
+
+.card-information {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  max-height: 250px;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+// .image-container:hover .card-information {
+//   opacity: 1;
+// }
+
+.down-info {
+  margin: 0;
+  padding: 0;
+}
+
+.info-btn {
+  width: auto;
+  color: rgb(27, 68, 68);
+  margin-left: 1em;
+  float: left;
+  font-weight: bold;
+  // border-bottom: rgba(105, 106, 107, 0.109) 1px solid;
+  // padding-bottom: .5em;
+}
+
+.subTitle {
+  font-size: 12px;
+  margin-left: 1.4em;
+  margin-top: -1em;
+  font-weight: lighter;
+  border-bottom: rgba(105, 106, 107, 0.109) 1px solid;
+  padding-bottom: .5em;
+}
+
+.position {
+  font-size: 12px;
+  margin-left: 1.4em;
+  margin-top: .5em;
+  font-weight: lighter;
+  float: left;
+  width: 200px;
+  // border-bottom: rgba(105, 106, 107, 0.109) 1px solid;
+  // padding-bottom: .5em;
+
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.card-section {
+  float: left; 
+  margin-bottom: 1.2em;
+  // width: 20%;
+  // height: inherit;
+}
