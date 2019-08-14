@@ -173,7 +173,10 @@ ul {
 }
 
 .social_section_1info {
-  margin: 0 !important;
+  margin: 0 !important;  
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 li {
@@ -211,6 +214,10 @@ div {
   background-color: #007af5;
   color: white;
   border: none;
+
+  a:hover {
+    color: white;
+  }
 }
 
 .gitHub {

@@ -1,5 +1,4 @@
 import React, {Fragment} from 'react';
-import Card from './card';
 import react from '../assets/react.jpeg';
 import ruby from '../assets/ruby.png';
 import rails from '../assets/rails.png';
@@ -8,79 +7,52 @@ import javascript from '../assets/javascript.svg';
 import node from '../assets/node.jpeg';
 
 
-export const softwareStacks = () => {
-  const stacks = {
-    level: {
-        one: 'Expert', 
-        two: 'Proficient',
-        three: 'Beginner',
-        four: 'Novice',
-      },
-    years: {
-      one: 1,
-      two: 2,
-      three: 3,
-      four: 4,
-      five: 5,
-      six: 0,
-    },
-    stack: {
-      one: " JavaScript",
-      two: "React and Redux",
-      three: "Ruby",
-      four: "Ruby on Rails",
-      five: "HTML5 and CSS3",
-      six: "Node",
-    },
-};
+export const SoftwareStacks = ({dropDown, title}) => {
+  const educationSection = dropDown === true && title === 'sta' ? "education-section" : "education-section show-section";
 return (
   <Fragment>
-  <Card
-  image={javascript}
-  company={stacks.stack.one}
-  subTitle={`${stacks.years.one} - ${stacks.years.two} years`}
-  position={stacks.level.two}
-  />
+  <div className={educationSection}>
+    <p>
+    <span className="education-title"><span> <img src={react} alt=""/></span> React Js</span> <br />
+    <span className="education-info">
+      2 years
+    </span>
+    </p>
 
+    <p>
+    <span className="education-title"> <span> <img src={javascript} alt=""/></span> JavaScript</span> <br />
+    <span className="education-info">
+      1 year
+    </span>
+    </p>
 
-<Card 
-  image={react}
-  company={stacks.stack.two}
-  subTitle={`${stacks.years.six} - ${stacks.years.one} year`}
-  position={stacks.level.two}
-  />
+    <p>
+    <span className="education-title"> <span> <img src={rails} alt=""/></span> Ruby on Rails</span> <br />
+    <span className="education-info">
+      1 year
+    </span>
+    </p>
 
-<Card 
-  image={htmlCss}
-  company={stacks.stack.five}
-  subTitle={`${stacks.years.three} years`}
-  position={stacks.level.two}
-  />
+    <p>
+    <span className="education-title"> <span> <img src={ruby} alt=""/></span> Ruby</span> <br />
+    <span className="education-info">
+      1 year
+    </span>
+    </p>
 
-
-<Card 
-  image={ruby}
-  company={stacks.stack.three}
-  subTitle={`${stacks.years.six} - ${stacks.years.one} year`}
-  position={stacks.level.three}
-  />
-
-<Card 
-  image={rails}
-  company={stacks.stack.four}
-  subTitle={`${stacks.years.six} - ${stacks.years.one} year`}
-  position={stacks.level.three}
-  />
-
-
-<Card 
-  image={node}
-  company={stacks.stack.six}
-  subTitle={`${stacks.years.six} - ${stacks.years.one} year`}
-  position={stacks.level.two}
-  />
-
-
+    <p>
+    <span className="education-title"> <span> <img src={htmlCss} alt=""/></span> HTML/CSS</span> <br />
+    <span className="education-info">
+      3 year
+    </span>
+    </p>
+    <p>
+    <span className="education-title"> <span> <img src={node} alt=""/></span> Node js</span> <br />
+    <span className="education-info">
+      1 year
+    </span>
+    </p>
+  </div> 
   </Fragment>
 )
 };

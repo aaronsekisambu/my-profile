@@ -2,9 +2,9 @@ import React, {Component, Fragment} from 'react';
 import BriefInformation from './briefInformation';
 import SocialMediaIcons from './socialMediaIcons';
 import Modals from './modal';
-import {workExperience} from './experience';
-import { education } from './education';
-import { softwareStacks } from './stacks';
+import {WorkExperience} from './experience';
+import { Education } from './education';
+import { SoftwareStacks } from './stacks';
 
 
 class LandingPage extends Component {
@@ -26,11 +26,11 @@ insertDetails = () => {
     case "Social Media":
       return <SocialMediaIcons />
     case "Experience":
-      return workExperience();
+      return WorkExperience();
     case "Education":
-      return education();
+      return Education();
     case "Stacks":
-      return softwareStacks();
+      return SoftwareStacks();
 
     default:
      return  "For more information email me at aaron.sekisambu@gmail.com";
